@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:minHeight">@dimen/_100sdp</item>
+        <item name="android:maxHeight">@dimen/_100sdp</item>
+    </style>
+</resources>

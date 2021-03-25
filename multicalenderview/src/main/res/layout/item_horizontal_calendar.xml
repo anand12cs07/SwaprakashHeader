@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutBackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/monthName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="Jan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/_9ssp"/>
+
+    <TextView
+        android:id="@+id/dayNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="Mon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="@dimen/_13ssp"/>
+
+    <View
+        android:id="@+id/selection_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="#f00f0f"
+        android:visibility="visible" />
+
+</LinearLayout>

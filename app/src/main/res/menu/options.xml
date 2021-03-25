@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/date"
+        android:title="DateWise" />
+
+    <item
+        android:id="@+id/week"
+        android:title="WeekWise" />
+
+    <item
+        android:id="@+id/month"
+        android:title="MonthWise" />
+
+    <item
+        android:id="@+id/quarter"
+        android:title="QuarterWise" />
+
+    <item
+        android:id="@+id/yearWise"
+        android:title="YearWise" />
+</menu>
