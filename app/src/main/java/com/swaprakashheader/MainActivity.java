@@ -132,9 +132,10 @@ public class MainActivity extends AppCompatActivity {
                 horizontalCalendar.refresh(HorizontalCalendar.MODE_MONTHLY, startDate.getTime(), endDate.getTime());
                 break;
             case R.id.quarter:
-                startDate.add(Calendar.MONTH,-15);
-                endDate.add(Calendar.MONTH,3);
-                horizontalCalendar.refresh(HorizontalCalendar.MODE_QUARTERLY, startDate.getTime(), endDate.getTime());
+                // contains bugs
+//                startDate.add(Calendar.MONTH,-15);
+//                endDate.add(Calendar.MONTH,3);
+//                horizontalCalendar.refresh(HorizontalCalendar.MODE_QUARTERLY, startDate.getTime(), endDate.getTime());
                 break;
             case R.id.yearWise:
                 startDate.add(Calendar.YEAR,-6);

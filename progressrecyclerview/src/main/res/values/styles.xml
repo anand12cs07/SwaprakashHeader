@@ -3,5 +3,6 @@
     <style name="ProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
         <item name="android:minHeight">@dimen/_100sdp</item>
         <item name="android:maxHeight">@dimen/_100sdp</item>
+        <item name="cornerRadius">@dimen/_8sdp</item>
     </style>
 </resources>

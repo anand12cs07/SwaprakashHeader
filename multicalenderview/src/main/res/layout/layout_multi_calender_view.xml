@@ -5,12 +5,6 @@
     android:layout_height="wrap_content"
     android:theme="@style/Theme.MaterialComponents">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="0dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,8 +23,6 @@
                 android:minHeight="@dimen/_16sdp"
                 android:background="@android:color/transparent"/>
         </LinearLayout>
-
-    </com.google.android.material.appbar.AppBarLayout>
 
 
     <FrameLayout

@@ -1,62 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_65sdp">
+    android:layout_height="@dimen/_65sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="false">
 
-    <ProgressBar
-        android:id="@+id/progress"
-        style="@style/ProgressBar"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_65sdp"
-        android:progress="55"
-        android:progressBackgroundTint="#075fcd"
-        android:progressTint="#075fcd" />
+        android:layout_height="@dimen/_65sdp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingStart="@dimen/_12sdp"
-        android:paddingEnd="@dimen/_8sdp"
-        android:weightSum="1">
-
-        <RelativeLayout
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/ProgressBar"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:gravity="center_vertical">
+            android:layout_height="@dimen/_65sdp"
+            android:progress="55"
+            android:progressBackgroundTint="#075fcd"
+            android:progressTint="#075fcd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:gravity="center_vertical"
+                    android:text="₹"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_currency"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="623"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_18ssp" />
+            </RelativeLayout>
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_currency"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_4sdp"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
                 android:gravity="center_vertical"
-                android:text="₹"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/_18ssp"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_amount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/tv_currency"
-                android:gravity="center_vertical"
-                android:text="623"
                 android:lines="1"
+                android:text="Available Balance"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/_18ssp" />
-        </RelativeLayout>
+                android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+    </FrameLayout>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_title"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:gravity="center_vertical"
-            android:text="Available Balance"
-            android:textColor="@android:color/white"
-            android:lines="1"
-            android:textSize="@dimen/_11ssp" />
-    </LinearLayout>
-</FrameLayout>
+</androidx.cardview.widget.CardView>
