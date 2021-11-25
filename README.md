@@ -4,4 +4,4 @@ It consists of two modules and a sample app that integrates these modules. Brief
 - progressrecyclerview: In this module, I implemented a dribble's design into reality.
 
 ### Working Example
-<video src="https://github.com/anand12cs07/SwaprakashHeader/blob/master/app/screenshot/header_clip.mp4" height="534" width="300">
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=tPopqVQtSfM)
